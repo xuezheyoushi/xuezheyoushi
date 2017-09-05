@@ -87,7 +87,7 @@
         <ul>
 <li>安装hexo</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> npm i -g hexo</div><div class="line">or</div><div class="line"><span class="meta">$</span> yarn add -g hexo</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> npm i -g hexo</span></div><div class="line">or</div><div class="line"><span class="meta">$</span><span class="bash"> yarn add -g hexo</span></div></pre></td></tr></table></figure>
 <ul>
 <li>提供本机SSH key给管理员添加到github后台，参考<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">生成SSH key</a>。</li>
 </ul>
@@ -97,45 +97,45 @@
 <ul>
 <li>检出项目</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> git clone https://github.com/xuezheyoushi/xuezheyoushi.github.io.git $&#123;your_folder_name&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/xuezheyoushi/xuezheyoushi.github.io.git <span class="variable">$&#123;your_folder_name&#125;</span></span></div></pre></td></tr></table></figure>
 <ul>
 <li>更新hexo-deployer-git</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd $&#123;your_folder_name&#125;</div><div class="line"><span class="meta">$</span> npm install hexo-deployer-git --save oryarn add hexo-deployer-git —save</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> <span class="variable">$&#123;your_folder_name&#125;</span></span></div><div class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save oryarn add hexo-deployer-git —save</span></div></pre></td></tr></table></figure>
 <ul>
 <li>新建博文</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo n '新博文' </div><div class="line">or </div><div class="line"><span class="meta">$</span> hexo new '新博文'</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo n <span class="string">'新博文'</span> </span></div><div class="line">or </div><div class="line"><span class="meta">$</span><span class="bash"> hexo new <span class="string">'新博文'</span></span></div></pre></td></tr></table></figure>
 <p>${your_foler_name}的_posts目录下会生成文件：新博文.md</p>
 <ul>
 <li>编辑博文（使用标准MarkDown语法，可参考已有博文）</li>
 <li>清除缓存</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo clean</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></div></pre></td></tr></table></figure>
 <ul>
 <li>生成内容</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo g</div><div class="line">or</div><div class="line"><span class="meta">$</span> hexo generate</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo g</span></div><div class="line">or</div><div class="line"><span class="meta">$</span><span class="bash"> hexo generate</span></div></pre></td></tr></table></figure>
 <ul>
 <li>本地预览</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo s</div><div class="line">or</div><div class="line"><span class="meta">$</span> hexo server</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo s</span></div><div class="line">or</div><div class="line"><span class="meta">$</span><span class="bash"> hexo server</span></div></pre></td></tr></table></figure>
 <ul>
 <li>预览没问题之后发布</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo d</div><div class="line">or</div><div class="line"><span class="meta">$</span> hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo d</span></div><div class="line">or</div><div class="line"><span class="meta">$</span><span class="bash"> hexo deploy</span></div></pre></td></tr></table></figure>
 <ul>
 <li>访问<a href="blog.xuezheyoushi.com">学者有师团队博客</a>查看效果</li>
 </ul>
 <blockquote>
 <p>更多hexo命令参考</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo help</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo <span class="built_in">help</span></span></div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.xuezheyoushi.com/2017/09/01/如何发博/" data-id="cj77d9dnj0001dtfyuvxt03vo" class="article-share-link">Share</a>
+      <a data-url="http://blog.xuezheyoushi.com/2017/09/01/如何发博/" data-id="cj77dbows0001hhfyl838w94t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.xuezheyoushi.com/2017/09/01/hello-world/" data-id="cj77d9dnb0000dtfygd73gps8" class="article-share-link">Share</a>
+      <a data-url="http://blog.xuezheyoushi.com/2017/09/01/hello-world/" data-id="cj77dbowk0000hhfyc27omm1w" class="article-share-link">Share</a>
       
       
     </footer>
