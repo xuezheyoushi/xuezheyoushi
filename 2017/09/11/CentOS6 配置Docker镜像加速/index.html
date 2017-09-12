@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: vim | 学者有师团队博客</title>
+  <title>CentOS6 配置Docker镜像加速 | 学者有师团队博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="学者有师团队博客">
-<meta property="og:url" content="http://blog.xuezheyoushi.com/tags/vim/index.html">
+  <meta name="description" content="CentOS6 配置Docker镜像加速的方法稍有不同1$ vim /etc/sysconfig/docker 添加如下两条命令： 12other_args=&quot;--registry-mirror=你的镜像加速地址&quot;OPTIONS=&apos;--registry-mirror=你的镜像加速地址&apos; 重启Docker服务： 1$ service docker restart Get ready to fly n">
+<meta name="keywords" content="CentOS,Docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS6 配置Docker镜像加速">
+<meta property="og:url" content="http://blog.xuezheyoushi.com/2017/09/11/CentOS6 配置Docker镜像加速/index.html">
 <meta property="og:site_name" content="学者有师团队博客">
+<meta property="og:description" content="CentOS6 配置Docker镜像加速的方法稍有不同1$ vim /etc/sysconfig/docker 添加如下两条命令： 12other_args=&quot;--registry-mirror=你的镜像加速地址&quot;OPTIONS=&apos;--registry-mirror=你的镜像加速地址&apos; 重启Docker服务： 1$ service docker restart Get ready to fly n">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-12T10:04:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学者有师团队博客">
+<meta name="twitter:title" content="CentOS6 配置Docker镜像加速">
+<meta name="twitter:description" content="CentOS6 配置Docker镜像加速的方法稍有不同1$ vim /etc/sysconfig/docker 添加如下两条命令： 12other_args=&quot;--registry-mirror=你的镜像加速地址&quot;OPTIONS=&apos;--registry-mirror=你的镜像加速地址&apos; 重启Docker服务： 1$ service docker restart Get ready to fly n">
   
     <link rel="alternate" href="/atom.xml" title="学者有师团队博客" type="application/atom+xml">
   
@@ -60,39 +65,59 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/09/07/Mac-OSXVim搭建Golang开发环境/" class="archive-article-date">
-  <time datetime="2017-09-07T15:42:15.000Z" itemprop="datePublished">9月 7</time>
+        <section id="main"><article id="post-CentOS6 配置Docker镜像加速" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/11/CentOS6 配置Docker镜像加速/" class="article-date">
+  <time datetime="2017-09-11T05:28:50.000Z" itemprop="datePublished">2017-09-11</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/07/Mac-OSXVim搭建Golang开发环境/">Mac OSX vim搭建Golang开发环境</a>
+    <h1 class="article-title" itemprop="name">
+      CentOS6 配置Docker镜像加速
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="CentOS6-配置Docker镜像加速的方法稍有不同"><a href="#CentOS6-配置Docker镜像加速的方法稍有不同" class="headerlink" title="CentOS6 配置Docker镜像加速的方法稍有不同"></a>CentOS6 配置Docker镜像加速的方法稍有不同</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> vim /etc/sysconfig/docker</div></pre></td></tr></table></figure>
+<p>添加如下两条命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">other_args="--registry-mirror=你的镜像加速地址"</div><div class="line">OPTIONS='--registry-mirror=你的镜像加速地址'</div></pre></td></tr></table></figure>
+<p>重启Docker服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> service docker restart</div></pre></td></tr></table></figure>
+<p>Get ready to fly now.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.xuezheyoushi.com/2017/09/11/CentOS6 配置Docker镜像加速/" data-id="cj7hfl5sc00018c76515edele" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/">Docker</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/07/Mac-OSXVim搭建Golang开发环境/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Mac OSX vim搭建Golang开发环境</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
